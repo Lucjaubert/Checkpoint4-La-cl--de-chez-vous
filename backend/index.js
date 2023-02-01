@@ -1,15 +1,17 @@
 require("dotenv").config();
 
+const db = require("./config");
+
 const app = require("./src/app");
 
 const port = parseInt(process.env.APP_PORT ?? "5000", 10);
 
-const db = require("./config");
-
 db.connect((err) => {
   if (err) {
+    // eslint-disable-next-line no-restricted-syntax
     console.log(err);
   } else {
+    // eslint-disable-next-line no-restricted-syntax
     console.log("Connected to database");
   }
 });
