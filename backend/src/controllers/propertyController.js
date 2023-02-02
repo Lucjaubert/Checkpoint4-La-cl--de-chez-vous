@@ -15,6 +15,14 @@ const propertyController = {
       .catch((err) => next(err));
   },
 
+  getPropertyByPrice: (req, res, next) => {
+    const { price } = req.params;
+    propertyModel
+      .findByPrice(price)
+      .then((property) => res.status(200).send(property))
+      .catch((err) => next(err));
+  },
+
   createPropertyForm: (req, res, next) => {
     const property = req.body;
     propertyModel

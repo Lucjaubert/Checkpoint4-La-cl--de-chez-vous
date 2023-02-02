@@ -1,0 +1,19 @@
+.home_page_body {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home_page_introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home_page_introduction h3 {
+  margin-top: 1vh;
+  margin-right: 30vw;
+}

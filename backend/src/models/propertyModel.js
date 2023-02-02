@@ -17,7 +17,7 @@ const findOne = (id) => {
 const createProperty = (property) => {
   return db
     .promise()
-    .query("INSERT INTO property SET ?", [property])
+    .query("INSERT INTO properties SET ?", [property])
     .then(([reponse]) => reponse);
 };
 

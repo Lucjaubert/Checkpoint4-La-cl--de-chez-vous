@@ -1,56 +1,88 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: var(--text-font-family-jost);
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(./assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(./assets/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(./assets/fonts/OpenSans-Regular.ttf);
+}
+
+:root {
+  --bleu-fonce: #001e3d;
+  --bleu-moyen: #002146;
+  --orange-fonce: #c48600;
+  --blanc-casse: #efefef;
+  --bleu-gris: #dae7e4;
+  --title-font-opensans-bold: "OpenSansBold";
+  --title2-font-opensans-light: "OpenSansLight";
+  --text-font-opensans-regular: "OpenSansRegular";
+}
+
+body {
+  background-color: var(--bleu-fonce);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: var(--text-font-opensans-regular);
+  font-size: 2vw;
+}
+h2 {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 1.6vw;
+}
+h3 {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 2vw;
+  color: var(--blanc-casse);
+  width: 17vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 1.2vw;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h5 {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 1vw;
 }
-
-.App-link {
-  color: #61dafb;
+h6 {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 1vw;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+p,
+button,
+li {
+  font-family: var(--title2-font-opensans-light);
+  font-size: 1.1vw;
 }
