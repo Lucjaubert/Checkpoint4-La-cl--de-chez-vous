@@ -53,7 +53,9 @@ function NavBar() {
         <button type="submit" className="button_sell_with_us">
           Vendre avec nous
         </button>
-        <img className="logo_phone" src={phone} alt="logo" />
+        <Link to="/ConnexionAgent">
+          <img className="logo_phone" src={phone} alt="logo" />
+        </Link>
       </div>
     </div>
   );

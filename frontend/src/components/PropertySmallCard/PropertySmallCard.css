@@ -1,0 +1,19 @@
+.bloc_card_body {
+  display: inline-block;
+  width: 45%;
+  margin-left: 3%;
+  margin-bottom: 8vh;
+}
+
+.pic_property {
+  width: 44.5vw;
+}
+
+.bloc_card_details {
+  background-color: var(--blanc-casse);
+}
+
+.bloc_card_body p {
+  color: var(--bleu-moyen);
+  font-size: 1rem;
+}

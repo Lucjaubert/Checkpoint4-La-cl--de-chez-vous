@@ -1,0 +1,63 @@
+.home_page_body {
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home_page_introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.buy_box_title h4 {
+  display: inline-block;
+  color: var(--blanc-casse);
+  border-bottom: 2px solid var(--orange-fonce);
+  padding-bottom: 5vh;
+}
+
+.home_page_introduction {
+  margin-bottom: 9vh;
+}
+
+.home_page_introduction h3 {
+  margin-top: 1vh;
+  margin-right: 12vw;
+  margin-left: 8vw;
+}
+
+.block_filter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
+
+.buy_box_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 35vw;
+  margin-bottom: 5vh;
+}
+
+.buy_box_buttons ul li {
+  color: var(--blanc-casse);
+}
+
+.add_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.add_card .btn_container {
+  margin-top: 12vh;
+  background-color: var(--orange-fonce);
+  color: var(--blanc-casse);
+  width: 10vw;
+  height: 10vh;
+}
